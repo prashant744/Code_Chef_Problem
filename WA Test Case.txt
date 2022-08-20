@@ -1,0 +1,14 @@
+# cook your dish here
+try:
+    T=int(input())
+    for i in range(T):
+        a=int(input())
+        b=list(map(int,input().split()))
+        c=input()
+        list1=[]
+        for i in range(a):
+            if c[i]=='0':
+                list1.append(b[i])
+        print(min(list1))   
+except:
+    pass
