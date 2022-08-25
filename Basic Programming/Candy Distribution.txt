@@ -1,0 +1,11 @@
+# cook your dish here
+t=int(input())
+n=0
+while(n<t):
+    inpline=input().split()
+    a,b=int(inpline[0]),int(inpline[1])
+    if((a/b)%2==0):
+        print("YES")
+    else:
+        print("NO")
+    n+=1
