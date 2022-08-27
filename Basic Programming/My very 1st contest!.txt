@@ -1,0 +1,6 @@
+a,b,c = map(int,input().split())
+
+ans=a-b
+ans1=ans-c
+
+print(ans,ans1)
