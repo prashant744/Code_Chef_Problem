@@ -1,0 +1,18 @@
+def problem(n,arr):
+    L="LTIME108"
+    S="START38"
+    count1=0
+    count2=0
+    for i in range(len(arr)):
+        if arr[i]==S:
+            count1=count1+1
+        if arr[i]==L:
+            count2=count2+1
+    print(count1,count2)
+    
+if __name__=="__main__":
+    t=int(input())
+    for i in range(t):
+        n=int(input())
+        arr=list(map(str,input().split()))
+        problem(n,arr)
