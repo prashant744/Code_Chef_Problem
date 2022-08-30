@@ -1,0 +1,10 @@
+# cook your dish here
+
+a,b = map(int,(input().split()))
+
+if(a<b):
+    print("YES")
+elif a==b:
+    print("NO")
+else:
+    print("NO")
