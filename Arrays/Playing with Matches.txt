@@ -1,0 +1,11 @@
+# cook your dish here
+for _ in range(int(input())):
+    code={'0':6,'1':2,'2':5,'3':5,'4':4,'5':5,'6':6,'7':3,'8':7,'9':6}
+    res=0
+    a,b = map(int,input().split())
+    s=a+b
+    
+    for i in str(s):
+        res+=code[i]
+    print(res)
+    
