@@ -1,0 +1,14 @@
+# cook your dish here
+
+for _ in range(int(input())):
+    a=input()
+    b=input()
+    e=''
+    for i in range(len(a)):
+        if a[i]==b[i]:
+            e+='G'
+        else:
+            e+='B'
+    print(e)
+    
+    
