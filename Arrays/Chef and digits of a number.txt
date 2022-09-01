@@ -1,0 +1,11 @@
+# cook your dish here
+
+for _ in range(int(input())):
+    n=list(input())
+    x=n.count("1")
+    z=n.count("0")
+    
+    if(x==1 or z==1):
+        print("Yes")
+    else:
+        print("No")
