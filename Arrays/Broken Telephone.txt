@@ -1,0 +1,15 @@
+# cook your dish here
+for _ in range(int(input())):
+    n=int(input())
+    l=list(map(int,input().split(" ")))
+    ad=0
+    ans=True
+    for i in range(n-1):
+        if l[i]!=l[i+1] and ans==True:
+            ad+=2
+            ans=False
+        elif l[i]!=l[i+1] and ans==False:
+            ad+=1
+        elif l[i]==l[i+1] and ans==False:
+            ans=True
+    print(ad)
