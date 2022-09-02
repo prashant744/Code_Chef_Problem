@@ -1,0 +1,8 @@
+# cook your dish here
+
+for _ in range(int(input())):
+        n,x,y=map(int,input().split())
+        a=set(map(int,input().split()))
+        b=set(map(int,input().split()))
+        l=len(list(a.intersection(b)))
+        print(l,n-(len(set(list(a)+list(b)))))
