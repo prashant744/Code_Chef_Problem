@@ -1,0 +1,18 @@
+testcases=int(input())
+for i in range(testcases):
+    a,b,c=map(int,input().split())
+    list1=list(map(int,input().split()))
+    if sum(list1)==a:
+        print('100')
+    else:
+        k=0
+        sum1=0
+        while k<b:
+            sum1=sum1+list1[k]
+            k=k+1
+        if sum1==b:
+            print(c)
+        else:
+            print('0')
+            
+    
