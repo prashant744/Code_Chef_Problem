@@ -1,0 +1,17 @@
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    m=set(a)
+    p={}
+    for i in m:
+        if a.count(i) not in p:
+            p[a.count(i)]=1
+        else:
+            p[a.count(i)]+=1
+    vals=[p[i] for i in p]
+    ax=[]
+    for i in p:
+        if p[i]==max(vals):
+            ax.append(i)
+    print(min(ax))
